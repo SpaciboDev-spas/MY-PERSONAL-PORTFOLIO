@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.body{
+    /* background: linear-gradient(to right,#D1D1D1,#ffffff); */
+    /* background: radial-gradient(white,#D1D1D1,blue); */
+    background: linear-gradient(to left,rgba(0, 0, 255, 0.167), #d1d1d1,rgba(0, 0, 255, 0.167));
+}
+.form{
+    background: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    border: thin solid white;
+    border-radius: 10px;
+}
+.sign-up{
+    color:#0000ff;
+    text-align: center;
+    font-size: 2.2em;
+    padding: 4px;
+}
+.btn{
+    color: white;
+    background: #0000ff;
+    border-radius: 5px;
+    border: 2px solid #0000ff;
+    font-size: 1em;
+    padding: 4px;
+    width: 30%;
+    margin-top: 8px;
+}
+.back{
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+    font-size: 0.6em;
+    background-color: #0000ff;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 4px 6px;
+}
+
+
+/* ========== MEDIA QUERIES FOR SIGN UP PAGE ========== */
+
+/* Large screens (≥1200px) */
+@media screen and (min-width: 1200px) {
+    .form {
+        width: 30%;
+    }
+}
+
+/* Medium screens (tablets: 768px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .form {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .btn {
+        width: 50%;
+        font-size: 1em;
+    }
+}
+
+/* Small screens (phones: 481px - 767px) */
+@media screen and (max-width: 767px) {
+    .form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    input, 
+    select {
+        width: 100%;
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .btn {
+        width: 70%;
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .back {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
+
+/* Extra small screens (≤480px) */
+@media screen and (max-width: 480px) {
+    .form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .sign-up {
+        font-size: 1.6em;
+    }
+
+    input, 
+    select {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .back {
+        font-size: 0.75em;
+        padding: 5px 8px;
+    }
+}

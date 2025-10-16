@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #F5F5EE;
+}
+/* .hello{
+    font-size: 4em;
+}
+.btn{
+    background-color: orangered;
+    border: none;
+}
+.btn:hover{
+    background-color: orange;
+} */
+
+.btn{
+    background-color: orangered;
+}
+.btn:hover{
+    background-color: orangered;
+}
+
+.about{
+    /* border: 2px solid green; */
+    position: relative;
+}
+.about a{
+    color: #222;
+}
+.about a:hover{
+    color: skyblue;
+}
+.about-dropdown{
+    position: absolute;
+}
+
+.about:hover .about-dropdown{
+    display: block;
+}
+.companies{
+    position: relative;
+}
+.companies a{
+    color: #222;
+}
+.companies-dropdown{
+    position: absolute;
+}
+.companies:hover .companies-dropdown{
+    display: block;
+}

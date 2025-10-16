@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ball{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 5px;
+    /* transform: translateX(400px);
+    transition: all 12s ease; */
+    animation-name: bounce;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+/* .ball:hover{
+    background-color: seagreen;
+} */
+
+
+@keyframes bounce{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: rotate(180deg);
+        background-color: aqua;
+    }
+    70%{
+        transform: translateY(600px);
+    }
+    100%{
+        transform: translateX(900px);
+        background-color: blue;
+    }
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #122231;
+    border-radius: 5px;
+    border: none;
+  
+}
+.btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.btn:hover{
+    animation-name: jump;
+    animation-duration: 5s;
+    /* transform: translateY(-10px 10px); */
+  
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+          transition: all 1s ease;
+    }
+    100%{
+        transform: translateY(0px);
+          transition: all 1s ease;
+    }
+}
+
+.access{
+    padding: 14px 44px;
+    background-color: #FF8200;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+}
+
+.hero-image{
+    animation-name: animate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.mini-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.div{
+    border: 2px solid red;
+    /* height: 50px; */
+}
+.text{
+    margin-bottom: 200px;
+    /* padding: 20px; */
+}
+p:hover{
+    /* text-decoration: underline; */
+    transition: all 10s ease;
+    border-bottom: 2px double blue;
+}

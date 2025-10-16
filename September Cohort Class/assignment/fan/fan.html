@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fan.css" />
+  </head>
+  <body>
+    <p id="display"></p>
+    <div class="container">
+     
+      <div class="circle">
+        <div class="blade blade1"></div>
+        <div class="blade blade2"></div>
+        <div class="blade blade3"></div>
+      </div>
+      <div class="stand"></div>
+      <div class="stand2"></div>
+      <div class="base">
+        <button id="toggleFan" onclick="fanControl()">Switch Fan</button>
+      </div>
+    </div>
+   
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggleFan");
+    const fanCircle = document.querySelector(".circle");
+    let display = document.getElementById("display");
+   
+
+    let isFanOn = true;
+    console.log(isFanOn);
+    
+    console.log(typeof isFanOn);
+
+    function fanControl(){
+      isFanOn = !isFanOn;
+      console.log(isFanOn);
+
+      fanCircle.style.animationPlayState = isFanOn ? "running" : "paused";
+      toggleButton.innerText = isFanOn ? "ON" : "OFF";
+      display.innerHTML = `The fan is ${isFanOn ? "ON" : "OFF"}`;
+    }
+
+  </script>
+</html>
